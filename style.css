@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    background: rgb(2,27,43);
+background: radial-gradient(circle, rgba(2,27,43,1) 0%, rgba(2,27,43,1) 51%, rgba(0,0,0,1) 100%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    text-shadow: 2px 5px 4px rgb(2,27,43);;
+}
+
+.main{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 5px 4px rgb(2,27,43);;
+    background: radial-gradient(circle, rgba(2,27,43,1) 0%, rgba(2,27,43,1) 51%, rgba(0,0,0,1) 100%);
+    padding: 12px;
+}
+
+
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+    bottom: 60px;
+}
+
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1em;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1) {
+    background-image: url(https://images.pexels.com/photos/56030/pyrite-pyrites-mineral-sulfide-56030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2) {
+    background-image: url(https://images.pexels.com/photos/47047/gold-ingots-golden-treasure-47047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+
+.imagem:nth-child(3) {
+    background-image: url(https://images.pexels.com/photos/830926/pexels-photo-830926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4) {
+    background-image: url(https://www.shutterstock.com/image-photo/997-fine-manganese-isolated-on-600w-1058286296.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5) {
+    background-image: url(https://www.shutterstock.com/image-photo/9999-fine-tin-isolated-on-600w-2127812723.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6) {
+    background-image: url(https://www.shutterstock.com/image-photo/niobium-stone-mineral-found-brazil-600w-1422658589.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7) {
+    background-image: url(https://www.shutterstock.com/image-photo/piece-nickel-on-white-background-600w-1184978620.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8) {
+    background-image: url(https://images.pexels.com/photos/1492232/pexels-photo-1492232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9) {
+    background-image: url(https://images.pexels.com/photos/375890/pexels-photo-375890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+footer{
+   margin-top: 50%;
+  position: fixed;
+   width: 100%;
+   bottom: 0vh;
+   left: 0;
+   background: radial-gradient(circle, rgba(2,27,43,1) 0%, rgba(2,27,43,1) 51%, rgba(0,0,0,1) 100%);
+   text-align: center;
+   padding:5px ;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+
+}
